@@ -811,24 +811,25 @@ ul {
   }
 
   .hero-visual {
-    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: auto;
   }
 
   .signal-card,
   .architecture-panel,
   .code-panel {
+    position: relative;
+    top: auto;
+    bottom: auto;
     right: auto;
-    left: 0;
+    left: auto;
     width: 100%;
   }
 
   .architecture-panel {
-    top: 154px;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .code-panel {
-    bottom: 0;
   }
 
   .project-card {
