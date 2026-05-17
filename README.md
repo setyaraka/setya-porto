@@ -1,31 +1,31 @@
 # Portfolio Setya
 
-Sebuah website portofolio personal yang dibangun menggunakan Next.js.
+A personal portfolio website built with Next.js.
 
-## 🚀 Teknologi yang Digunakan
+## 🚀 Tech Stack
 
 - **Framework:** [Next.js](https://nextjs.org/) (App Router)
 - **Library:** [React](https://reactjs.org/)
-- **Bahasa Pemrograman:** [TypeScript](https://www.typescriptlang.org/)
-- **Styling:** Tailwind CSS (jika digunakan, berdasarkan konfigurasi)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** Tailwind CSS
 
-## 📦 Cara Memulai (Getting Started)
+## 📦 Getting Started
 
-Pertama, install semua dependensi yang dibutuhkan:
+First, install all the dependencies:
 
 ```bash
 npm install
 ```
 
-Kemudian, jalankan server *development*:
+Then, run the development server:
 
 ```bash
 npm run dev
 ```
 
-Buka [http://localhost:3000](http://localhost:3000) di browser Anda untuk melihat hasilnya.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 📂 Struktur Proyek
+## 📂 Project Structure
 
-- `app/` - Direktori utama untuk App Router Next.js (berisi halaman dan komponen).
-- `public/` - Aset statis seperti gambar atau ikon.
+- `app/` - The main directory for the Next.js App Router (contains pages and components).
+- `public/` - Static assets such as images or icons.
