@@ -359,6 +359,7 @@ export default function Home() {
             <a href="mailto:setyarakap@gmail.com">setyarakap@gmail.com</a>
             <a href="https://www.linkedin.com/in/setyapanggarakapangestu/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="https://github.com/setyaraka" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://wa.me/6282139012481" target="_blank" rel="noreferrer">WhatsApp</a>
           </div>
         </div>
         <form className="contact-form" action="mailto:setyarakap@gmail.com" method="post" encType="text/plain">
