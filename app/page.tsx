@@ -90,7 +90,7 @@ const experiences = [
     role: "Frontend-Focused Fullstack Engineer",
     focus: "AI-powered SaaS products, secure file-sharing systems, and end-to-end product builds.",
     bullets: [
-      "Delivered AI-integrated applications with typed frontend architecture and backend APIs.",
+      "Delivered AI-integrated applications with robust software engineering and backend APIs.",
       "Designed secure document access workflows with previews, limits, and auditability.",
       "Created reusable engineering systems for faster, cleaner SaaS development."
     ]
@@ -171,7 +171,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-bg" aria-hidden="true" />
         <div className="hero-content">
-          <p className="eyebrow">Frontend architecture / fintech / AI SaaS</p>
+          <p className="eyebrow">Software engineer / B2B Commerce / Fintech / AI SaaS</p>
           <h1>Setya Pangga Raka Pangestu</h1>
           <h2>Frontend-Focused Software Engineer</h2>
           <p>
@@ -251,7 +251,7 @@ export default function Home() {
 
       <section className="section section-split" id="impact">
         <SectionHeading eyebrow="Engineering impact" title="Production habits that compound">
-          The work emphasizes predictable systems, reusable abstractions, and frontend architecture that keeps
+          The work emphasizes predictable systems, reusable abstractions, and engineering practices that keep
           product teams moving without sacrificing quality.
         </SectionHeading>
         <div className="metric-grid">
@@ -324,7 +324,7 @@ export default function Home() {
         </SectionHeading>
         <div className="philosophy-grid">
           {[
-            ["Scalable frontend architecture", "Feature modules, shared primitives, predictable state, and composition patterns that reduce incidental complexity."],
+            ["Scalable software architecture", "Feature modules, shared primitives, predictable state, and composition patterns that reduce incidental complexity."],
             ["Secure access systems", "CSP/XSS prevention, signed access flows, guarded previews, and audit-friendly event modeling."],
             ["Maintainable product code", "Clean component boundaries, reusable hooks, practical testing, and naming that mirrors product behavior."],
             ["AI-integrated SaaS", "RAG pipelines, grounded responses, embedding workflows, and AI interfaces designed for user trust."]

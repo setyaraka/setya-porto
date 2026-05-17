@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Setya Pangga Raka Pangestu | Frontend-Focused Software Engineer",
     description:
-      "Scalable frontend architecture, secure SaaS systems, fintech platforms, and AI-integrated applications.",
+      "Scalable software architecture, secure SaaS systems, fintech platforms, and AI-integrated applications.",
     type: "website"
   }
 };
