@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Lenis from "lenis";
 
 const revealSelector = [
     ".section-heading",
@@ -82,19 +83,36 @@ export function MotionEnhancer() {
             });
         };
 
-        const updateScroll = () => {
-            nav?.classList.toggle("is-scrolled", window.scrollY > 24);
-            root.style.setProperty("--scroll-ratio", String(Math.min(window.scrollY / 900, 1)));
+        const updateScroll = (scrollPos: number) => {
+            nav?.classList.toggle("is-scrolled", scrollPos > 24);
+            root.style.setProperty("--scroll-ratio", String(Math.min(scrollPos / 900, 1)));
+            root.style.setProperty("--scroll-y", String(scrollPos));
         };
 
-        updateScroll();
+        const lenis = new Lenis({
+            lerp: 0.08,
+            smoothWheel: true,
+        });
+
+        lenis.on('scroll', (e: any) => {
+            updateScroll(e.scroll);
+        });
+
+        updateScroll(window.scrollY);
         window.addEventListener("pointermove", updatePointer, { passive: true });
-        window.addEventListener("scroll", updateScroll, { passive: true });
+
+        let rafId: number;
+        function raf(time: number) {
+            lenis.raf(time);
+            rafId = requestAnimationFrame(raf);
+        }
+        rafId = requestAnimationFrame(raf);
 
         return () => {
+            lenis.destroy();
+            cancelAnimationFrame(rafId);
             cancelAnimationFrame(frame);
             window.removeEventListener("pointermove", updatePointer);
-            window.removeEventListener("scroll", updateScroll);
             revealObserver.disconnect();
             counterObserver.disconnect();
         };
