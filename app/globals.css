@@ -20,10 +20,6 @@
   box-sizing: border-box;
 }
 
-html {
-  /* scroll-behavior: smooth removed for Lenis */
-}
-
 body {
   margin: 0;
   background:
