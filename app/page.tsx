@@ -157,8 +157,8 @@ export default function Home() {
     <main>
       <nav className="nav" aria-label="Primary navigation">
         <a className="brand" href="#top" aria-label="Setya portfolio home">
-          <span>SP</span>
-          Setya Pangga
+          <span>SR</span>
+          Setya Raka
         </a>
         <div className="nav-links">
           <a href="#projects">Projects</a>
